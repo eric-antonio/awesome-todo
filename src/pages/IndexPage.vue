@@ -6,7 +6,6 @@
       v-model="mensagem"
       @keyup.esc="clearMesage"
       @keyup.enter="alertMesage"
-      @mouseenter="alertMesage"
     >
     <button @click="clearMesage">
       Limpar
