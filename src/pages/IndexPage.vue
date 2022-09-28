@@ -22,8 +22,12 @@ export default defineComponent({
   methods:{
     clearMesage(){
       this.mensagem = ''
-    },handelkeyup(){
-      
+    },handelkeyup(e){
+      console.log(e)
+      if(e.keyCode == 32){
+        this.clearMesage()
+      }
+
     }
   }
 })
