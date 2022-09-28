@@ -2,7 +2,7 @@
 <template>
   <q-page>
 
-    <input type="text" v-model="mensagem">
+    <input type="text" v-model="mensagem" @keyuo="handel">
     <button @click="clearMesage">Limpar</button>
     <h5>{{ mensagem }}</h5>
   </q-page>
