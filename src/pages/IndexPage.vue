@@ -2,7 +2,7 @@
 <template>
   <q-page>
 
-    <input type="text" v-model="mensagem" @keyuo="handel">
+    <input type="text" v-model="mensagem" @keyup="handelkeyup">
     <button @click="clearMesage">Limpar</button>
     <h5>{{ mensagem }}</h5>
   </q-page>
@@ -22,6 +22,8 @@ export default defineComponent({
   methods:{
     clearMesage(){
       this.mensagem = ''
+    },handelkeyup(){
+      
     }
   }
 })
