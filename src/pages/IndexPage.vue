@@ -1,7 +1,10 @@
-<!-- Template em Html5 -->
+<!-- Template em Html -->
 <template>
   <q-page>
 
+    <input type="text" v-model="mensagem">
+    <button @click="clearMesage">Limpar</button>
+    <h5>{{ mensagem }}</h5>
   </q-page>
 </template>
 
@@ -11,7 +14,16 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  data(){
+    return{
+      mensagem: 'I love❤️ Vue.js'
+    }
+  },
+  methods:{
+    clearMesage(){
+      this.mensagem = ''
+    }
+  }
 })
 </script>
 
