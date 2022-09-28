@@ -26,6 +26,8 @@ export default defineComponent({
       console.log(e)
       if(e.keyCode == 32){
         this.clearMesage()
+      }else if(e.keyCode == 13){
+        this.clearMesage()
       }
 
     }
