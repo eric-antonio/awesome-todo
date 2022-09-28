@@ -2,9 +2,17 @@
 <template>
   <q-page>
 
-    <input type="text" v-model="mensagem" @keyup="handelkeyup">
-    <button @click="clearMesage">Limpar</button>
+    <input type="text"
+      v-model="mensagem"
+      @keyup.esc="clearMesage"
+      @keyup.enter="clearMesage"
+    >
+    <button @click="clearMesage">
+      Limpar
+    </button>
+
     <h5>{{ mensagem }}</h5>
+
   </q-page>
 </template>
 
@@ -22,14 +30,8 @@ export default defineComponent({
   methods:{
     clearMesage(){
       this.mensagem = ''
-    },handelkeyup(e){
-      console.log(e)
-      if(e.keyCode == 32){
-        this.clearMesage()
-      }else if(e.keyCode == 13){
-        this.clearMesage()
-      }
-
+    },alertMesage(){
+      alert(this.mensagem)
     }
   }
 })
