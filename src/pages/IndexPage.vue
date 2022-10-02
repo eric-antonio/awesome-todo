@@ -5,6 +5,7 @@
       <li v-for="(task, index) in tasks">
         <div>{{index}} {{task.name}}</div>
         <small>{{task.dueDate}} @{{task.dueTime}}</small>
+        <button class="bt-del">DEL</button>
       </li>
     </ul>
   </q-page>
@@ -39,5 +40,7 @@ export default defineComponent({
 
 <!-- Style -->
 <style>
-
+  .bt-del{
+    margin-left: 10px;
+  }
 </style>
