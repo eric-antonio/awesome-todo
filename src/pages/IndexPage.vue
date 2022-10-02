@@ -1,9 +1,9 @@
 <!-- Template em Html -->
 <template>
   <q-page padding>
-    <li
-    v-for="task in tasks">
-      {{task}}
+    <li v-for="task in tasks">
+      <div>{{task.name}}</div>
+      <small>{{task.dueDate}} @{{task.dueTime}}</small>
   </li>
   </q-page>
 </template>
