@@ -30,7 +30,7 @@
 
     <hr>
 
-    <p>Upercase: {{mesageUpercase()}}</p>
+    <p>Upercase: {{mesageUpercase}}</p>
 
   </q-page>
 </template>
@@ -47,16 +47,18 @@ export default defineComponent({
     }
   },
   computed:{
-    
+
+    mesageUpercase(){
+      console.log('messageUpercase was edited!')
+      return this.mensagem.toUpperCase()
+    }
+
   },
   methods:{
     clearMesage(){
       this.mensagem = ''
     },alertMesage(){
       alert(this.mensagem)
-    },mesageUpercase(){
-      console.log('messageUpercase was edited!')
-      return this.mensagem.toUpperCase()
     }
   }
 })
