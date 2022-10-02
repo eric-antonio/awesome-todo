@@ -2,8 +2,8 @@
 <template>
   <q-page padding>
     <ul>
-      <li v-for="task in tasks">
-        <div>{{task.name}}</div>
+      <li v-for="(task, index) in tasks">
+        <div>{{index}} {{task.name}}</div>
         <small>{{task.dueDate}} @{{task.dueTime}}</small>
       </li>
     </ul>
