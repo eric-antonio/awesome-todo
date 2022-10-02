@@ -46,6 +46,9 @@ export default defineComponent({
       counter: 0
     }
   },
+  computed:{
+    
+  },
   methods:{
     clearMesage(){
       this.mensagem = ''
