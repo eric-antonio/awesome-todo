@@ -11,7 +11,7 @@
       Limpar
     </button>
 
-    <h5>{{ mensagem }}</h5>
+    <h5 class="border-grey">{{ mensagem }}</h5>
 
   </q-page>
 </template>
@@ -39,5 +39,7 @@ export default defineComponent({
 
 <!-- Style -->
 <style>
-
+  .border-grey{
+    border: 1px solid grey;
+  }
 </style>
