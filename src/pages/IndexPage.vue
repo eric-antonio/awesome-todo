@@ -15,7 +15,11 @@ export default defineComponent({
 
     data(){
       return{
-        tasks:['Got to shop','Get Bananas ','Get appels']
+        tasks:[
+          {
+            name: 'Go to Shop',
+          }
+        ]
       }
     }
 })
