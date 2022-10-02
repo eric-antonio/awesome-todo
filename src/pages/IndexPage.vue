@@ -16,7 +16,15 @@
       class="border-grey">
       {{ mensagem }}
     </h5>
-    <h6 v-else> No mesage enterd😒</h6>
+
+
+    <h6 v-else>
+       No mesage enterd!😒
+    </h6>
+
+    <hr>
+
+    <p>Upercase: {{mesageUpercase()}}</p>
 
   </q-page>
 </template>
@@ -36,6 +44,8 @@ export default defineComponent({
       this.mensagem = ''
     },alertMesage(){
       alert(this.mensagem)
+    },mesageUpercase(){
+      return this.mensagem.toUpperCase()
     }
   }
 })
