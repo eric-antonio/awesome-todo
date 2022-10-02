@@ -20,7 +20,6 @@
   </q-page>
 </template>
 
-
 <!-- Script -->
 <script>
 import { defineComponent } from 'vue'
