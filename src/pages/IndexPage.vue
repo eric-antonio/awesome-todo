@@ -11,7 +11,7 @@
       Limpar
     </button>
 
-    <h5 class="border-grey">{{ mensagem }}</h5>
+    <h5 class="border-grey" v-show="mensagem.length">{{ mensagem }}</h5>
 
   </q-page>
 </template>
