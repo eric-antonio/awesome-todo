@@ -2,11 +2,10 @@
 <template>
   <q-page padding>
     <ul>
-      <li v-for="(task, index) in tasks">
-        <div>{{index}} {{task.name}}</div>
-        <small>{{task.dueDate}} @{{task.dueTime}}</small>
-        <button class="bt-del" @click="deleteTask(index)">DEL</button>
-      </li>
+      
+      <task v-for="(task, index) in tasks">
+
+      </task>
     </ul>
   </q-page>
 </template>
@@ -14,6 +13,8 @@
 <!-- Script -->
 <script>
 import { defineComponent } from 'vue'
+import Task from '../components/Task.vue'
+
 export default defineComponent({
 
     data(){
@@ -39,7 +40,12 @@ export default defineComponent({
         this.tasks.splice(index, 1)
 
       }
-    }
+    },
+    // importamos a pagina Task!
+    components:{
+    "task": require("components/Task.vue").default,
+    Task
+}
 })
 </script>
 
