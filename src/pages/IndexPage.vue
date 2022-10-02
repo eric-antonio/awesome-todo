@@ -1,6 +1,7 @@
 <!-- Template em Html -->
 <template>
   <q-page padding>
+    <li v-for="task in tasks"></li>
   </q-page>
 </template>
 
