@@ -17,7 +17,18 @@ export default defineComponent({
       return{
         tasks:[
           {
-            name: 'Go to Shop',
+            name: 'Go to Shcoll',
+            dueDate:'2022/10/03',
+            dueTime: '09:00H'
+          },
+          {
+            name: 'Go tO Hork',
+            dueDate:'2022/10/03',
+            dueTime: '10:00H'
+          },{
+            name: 'Go to GYM',
+            dueDate:'2022/10/03',
+            dueTime: '17:00H'
           }
         ]
       }
