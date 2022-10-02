@@ -7,7 +7,14 @@
 <!-- Script -->
 <script>
 import { defineComponent } from 'vue'
-export default defineComponent({})
+export default defineComponent({
+
+    data(){
+      return{
+        tasks:['Got to shop','Get Bananas ','Get appels']
+      }
+    }
+})
 </script>
 
 <!-- Style -->
