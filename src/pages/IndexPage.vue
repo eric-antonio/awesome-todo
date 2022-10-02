@@ -5,7 +5,7 @@
       <li v-for="(task, index) in tasks">
         <div>{{index}} {{task.name}}</div>
         <small>{{task.dueDate}} @{{task.dueTime}}</small>
-        <button class="bt-del">DEL</button>
+        <button class="bt-del" @click="deleteTask(index)">DEL</button>
       </li>
     </ul>
   </q-page>
@@ -33,6 +33,11 @@ export default defineComponent({
             dueTime: '17:00H'
           }
         ]
+      }
+    }, methods:{
+      deleteTask(index){
+        this.tasks.splice(index, 1)
+
       }
     }
 })
