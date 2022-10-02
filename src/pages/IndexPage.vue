@@ -52,6 +52,7 @@ export default defineComponent({
     },alertMesage(){
       alert(this.mensagem)
     },mesageUpercase(){
+      console.log('messageUpercase was edited!')
       return this.mensagem.toUpperCase()
     }
   }
