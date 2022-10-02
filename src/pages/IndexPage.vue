@@ -1,10 +1,12 @@
 <!-- Template em Html -->
 <template>
   <q-page padding>
-    <li v-for="task in tasks">
-      <div>{{task.name}}</div>
-      <small>{{task.dueDate}} @{{task.dueTime}}</small>
-  </li>
+    <ul>
+      <li v-for="task in tasks">
+        <div>{{task.name}}</div>
+        <small>{{task.dueDate}} @{{task.dueTime}}</small>
+      </li>
+    </ul>
   </q-page>
 </template>
 
@@ -20,8 +22,7 @@ export default defineComponent({
             name: 'Go to Shcoll',
             dueDate:'2022/10/03',
             dueTime: '09:00H'
-          },
-          {
+          },{
             name: 'Go tO Hork',
             dueDate:'2022/10/03',
             dueTime: '10:00H'
