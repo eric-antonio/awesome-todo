@@ -1,6 +1,11 @@
 <!-- Template em Html -->
 <template>
-  <q-page>
+  <q-page padding>
+    <button
+      style="position: absolute; right: 10px"
+    >
+      {{counter}}
+    </button>
 
     <input type="text"
       v-model="mensagem"
@@ -36,7 +41,8 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data(){
     return{
-      mensagem: 'I love❤️ Vue.js'
+      mensagem: 'I love❤️ Vue.js',
+      counter: 0
     }
   },
   methods:{
