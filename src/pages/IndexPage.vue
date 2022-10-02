@@ -16,6 +16,7 @@
       class="border-grey">
       {{ mensagem }}
     </h5>
+    <h6 v-else> No mesage enterd😒</h6>
 
   </q-page>
 </template>
