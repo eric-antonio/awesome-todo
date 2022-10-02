@@ -12,7 +12,7 @@
     </button>
 
     <h5
-      v-show="mensagem.length"
+      v-if="mensagem.length"
       class="border-grey">
       {{ mensagem }}
     </h5>
