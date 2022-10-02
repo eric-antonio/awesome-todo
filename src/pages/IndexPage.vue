@@ -3,6 +3,7 @@
   <q-page padding>
     <button
       style="position: absolute; right: 10px"
+      @click="counter++"
     >
       {{counter}}
     </button>
