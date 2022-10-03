@@ -5,15 +5,17 @@
     <small> {{ task.dueDate }} @ {{ task.dueTime}} </small>
     <button class="bt-del" @click="deleteTask(index)">DEL</button>
   </li>
-  
+
 </tempalte>
 
 <!-- Script -->
 <script>
-  export default{
-    props:['task']
-  }
+import { defineAsyncComponent } from "vue";
 
+export default {
+
+  props: ['task', 'idex']
+}
 </script>
 
 
