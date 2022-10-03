@@ -5,9 +5,8 @@
 
       <task
         v-for="(task, index) in tasks"
-        task="task"
-        >
-
+        :task="task"
+        :index="index">
       </task>
     </ul>
   </q-page>
