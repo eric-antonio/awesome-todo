@@ -51,12 +51,14 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Todo',
+
     caption: 'Task List',
     icon: 'list',
     link: '/'
   },
   {
     title: 'Settings',
+
     caption: 'Settings and Cofigurations',
     icon: 'settings',
     link:'/#/settings'
