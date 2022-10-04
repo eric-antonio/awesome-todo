@@ -59,7 +59,7 @@ const linksList = [
     title: 'Settings',
     caption: 'Settings and Cofigurations',
     icon: 'settings',
-    link:'/settings'
+    link:'/#/settings'
   },
   {
     title: 'Github',
