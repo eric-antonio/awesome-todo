@@ -1,6 +1,8 @@
 <!-- Template em Html -->
 <template>
-  <q-page padding></q-page>
+  <q-page padding>
+      <p>Todo Page</p>
+  </q-page>
 </template>
 
 <!-- Script -->
