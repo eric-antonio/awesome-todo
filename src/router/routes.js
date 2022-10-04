@@ -4,7 +4,17 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/PageTodo.vue') }
+      // Caminhos da nossa pagina ou url's
+      {
+        // Pagina principal
+        path: '',
+        component: () => import('pages/PageTodo.vue')
+      },
+      {
+        // Pagina de Configuraçoes!
+        path: '/settings',
+        component: () => import('pages/PageSettings.vue')
+      }
     ]
   },
 
