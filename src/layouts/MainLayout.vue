@@ -1,6 +1,6 @@
 <!-- Template HTML5 -->
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout  view="hHh lpR fFf">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -12,11 +12,11 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title class="titulo">
+          Awesome Todo
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+
       </q-toolbar>
     </q-header>
 
@@ -101,6 +101,9 @@ export default defineComponent({
 </script>
 
 <style>
+  .titulo{
+    text-align: center;
+  }
   @media screen  and (min-width: 768px){
     .q-footer{
       display: none;
