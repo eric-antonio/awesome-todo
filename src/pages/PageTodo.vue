@@ -4,13 +4,16 @@
     <q-list bordered >
 
 
-      <q-item v-ripple>
+      <q-item v-ripple
+        v-for="task in tasks"
+        :key="task.id"
+      >
         <q-item-section side top>
-          <q-checkbox v-model="check1" />
+          <q-checkbox v-model="task.completed" />
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>Notifications</q-item-label>
+          <q-item-label>{{task.name}}</q-item-label>
 
         </q-item-section>
       </q-item>
@@ -29,7 +32,7 @@ export default defineComponent({
         {
           id:1,
           name: 'Go to Shop',
-          completed: false
+          completed: true
         },
         {
           id:2,
