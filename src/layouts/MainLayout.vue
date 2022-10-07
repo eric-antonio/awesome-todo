@@ -19,6 +19,12 @@
       </q-toolbar>
     </q-header>
 
+    <q-footer elevated>
+        <q-toolbar>
+          <q-toolbar-title>Footer-AwesomeTodo</q-toolbar-title>
+        </q-toolbar>
+      </q-footer>
+
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
