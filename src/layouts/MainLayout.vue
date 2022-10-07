@@ -19,11 +19,16 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer elevated>
-        <q-toolbar>
-          <q-toolbar-title>Footer-AwesomeTodo</q-toolbar-title>
-        </q-toolbar>
-      </q-footer>
+    <q-footer>
+      <q-tabs
+        v-model="tab"
+        inline-label
+        class="bg-primary text-white shadow-2">
+        <q-route-tab name="todo" icon="list" label="Todo" to="/" />
+        <q-route-tab name="stettings" icon="settings" label="Settings" to='/settings' />
+
+      </q-tabs>
+    </q-footer>
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -57,7 +62,6 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Todo',
-
     caption: 'Task List',
     icon: 'list',
     link: '/'
