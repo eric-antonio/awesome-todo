@@ -3,25 +3,16 @@
   <q-layout  view="hHh lpR fFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
         <q-toolbar-title class="titulo">
           Awesome Todo
         </q-toolbar-title>
 
-
       </q-toolbar>
     </q-header>
 
-    <q-footer id="footer">
+    <q-footer id="footer" class="bg-primary">
       <q-tabs
+        dark
         v-model="tab"
         inline-label
         class="bg-primary text-white shadow-2">
@@ -36,9 +27,11 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
+      width="250"
+      class="bg-primary"
       breakpoint="768"
     >
-      <q-list>
+      <q-list dark>
         <q-item-label header>
           Navigation!
         </q-item-label>
@@ -100,7 +93,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style lang="scss">
   .titulo{
     text-align: center;
   }
