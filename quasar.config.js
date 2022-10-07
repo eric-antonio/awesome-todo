@@ -92,7 +92,16 @@ module.exports = configure(function (/* ctx */) {
         'QLayout',
         'QHeader',
         'QDrawer',
-        'QPage'
+        'QPageContainer',
+        'QPage',
+        'QToolbar',
+        'QToolbarTitle',
+        'QBtn',
+        'QIcon',
+        'QList',
+        'QItem',
+        'QItemSection',
+        'QItemLabel',
       ],
 
       // iconSet: 'material-icons', // Quasar icon set
