@@ -1,7 +1,7 @@
 <!-- Template em Html -->
 <template>
   <q-page class="q-pa-md">
-    <q-list bordered >
+    <q-list bordered  separator >
 
 
       <q-item v-ripple
@@ -9,23 +9,46 @@
         :key="task.id"
         @click="task.completed = !task.completed"
         clickable
+        :class="!task.completed ? 'bg-blue-3' : 'bg-green-3'"
+
       >
         <q-item-section side top>
           <q-checkbox v-model="task.completed" />
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>{{task.name}}</q-item-label>
+          <q-item-label :class="{'text-strikethrough' : task.completed}">
+            {{task.name}}
+          </q-item-label>
         </q-item-section>
 
-        <q-item-section side top>
+        <q-item-section side>
+          <div class="row">
 
-          <q-item-label caption>{{task.dueDate}}</q-item-label>
-          <q-item-label caption>
-            <samll>
-              {{task.dueTime}}
-             </samll>
-          </q-item-label>
+            <div class="column justify-center">
+              <q-icon name="today"  size='19px' class="q-mr-sm"/>
+            </div>
+
+            <div class="column">
+
+              <q-item-label caption class="row justify-end">
+
+                {{task.dueDate}}
+
+              </q-item-label>
+
+              <q-item-label caption class="row justify-end">
+
+                <samll>
+                  {{task.dueTime}}
+                </samll>
+
+              </q-item-label>
+
+            </div>
+
+          </div>
+
 
         </q-item-section>
       </q-item>
